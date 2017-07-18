@@ -16,7 +16,7 @@
         module.exports = factory(moment);
     } else if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
-        define(function (req)
+        define(['require', 'moment'], function (req)
         {
             // Load moment.js as an optional dependency
             var id = 'moment';
